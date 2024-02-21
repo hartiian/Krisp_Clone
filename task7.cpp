@@ -4,7 +4,7 @@ typedef void(*sort)(int*, int);
 
 void bubble(int* arr, int size) 
 {
-	bool flag;
+    bool flag;
     for (int i= 0; i < size - 1; ++i)
     {
        	flag = false;
@@ -29,18 +29,18 @@ void selection(int* arr, int size)
 {
 	for (int i = 0; i < size - 1; i++) 
 	{
-        int min_index = i;
-        for (int j = i + 1; j < size; j++) 
+        	int min_index = i;
+        	for (int j = i + 1; j < size; j++) 
 		{
-            if (arr[j] < arr[min_index]) 
-			{
-                min_index = j;
-            }
-        }
-        int temp = arr[i];
-        arr[i] = arr[min_index];
-        arr[min_index] = temp;
-    }
+            		if (arr[j] < arr[min_index]) 
+	    		{
+                		min_index = j;
+            		}
+        	}
+        	int temp = arr[i];
+        	arr[i] = arr[min_index];
+        	arr[min_index] = temp;
+    	}
 }
 
 sort get() 
@@ -50,13 +50,13 @@ sort get()
     std::cout << "1 -> Selection\n";
     std::cin >> choice;
     if (choice)
-	{
-		return selection;
-	}
-	else
-	{
-		return bubble;
-	}
+    {
+	return selection;
+    }
+    else
+    {
+	return bubble;
+    }
 }
 
 void print(int* arr, int size) 
