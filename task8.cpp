@@ -21,7 +21,7 @@ typedef struct
 const char* get(Day week_day) 
 {
     switch (week_day) 
-	{
+    {
         case Monday:
             return "Monday";
         case Tuesday:
@@ -34,9 +34,9 @@ const char* get(Day week_day)
             return "Friday";
         case Saturday:
             return "Saturday";
-		case Sunday:
-			return "Sunday";
-		default:
+	case Sunday:
+	    return "Sunday";
+	default:
             return "Invalid day";
     }
 }
