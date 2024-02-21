@@ -52,28 +52,29 @@ void selection(int* arr, int size)
         	arr[min_index] = temp;
     	}
 }
+
 SortingStrategy select() 
 {
     int choice;
     std::cout << "0 -> Bubble\n";
     std::cout << "1 -> Selection\n";
     std::cin >> choice;
- 	if (choice)
+    if (choice)
     {
-		return Selection;
+	return Selection;
     }
     else
     {
-		return Bubble;
+	return Bubble;
     }
 }
 
 SortingOption find(SortingOption op[], int num, SortingStrategy str) 
 {
     for (int i = 0; i < num; ++i) 
-	{
+    {
         if (op[i].str == str) 
-		{
+	{
             return op[i];
         }
     }
@@ -83,7 +84,7 @@ SortingOption find(SortingOption op[], int num, SortingStrategy str)
 void print(int* arr, int size) 
 {
     for (int i = 0; i < size; ++i) 
-	{
+    {
         std::cout << arr[i] << " ";
     }
     std::cout << std::endl;
@@ -93,8 +94,7 @@ int main()
 {
     int arr[] = {5, 2, 17, 1, 19, 31};
     int size = sizeof(arr) / sizeof(arr[0]);
-    SortingOption op[] = 
-	{
+    SortingOption op[] = {
         {Bubble, bubble},
         {Selection, selection}
     };
