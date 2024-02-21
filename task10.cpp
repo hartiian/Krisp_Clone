@@ -6,7 +6,7 @@ int main()
 {
     std::fstream output("example.txt");
     if (!output.is_open()) 
-	{
+    {
         std::cerr << "Error!\n";
     }
     output << "Arpine\n";
@@ -17,13 +17,13 @@ int main()
 
     std::fstream input("example.txt");
     if (!input.is_open()) 
-	{
+    {
         std::cerr << "Error!\n";
     }
+	
     std::string name;
-    std::cout << "Contents of the file:\n";
     while (std::getline(input, name)) 
-	{
+    {
         std::cout << name << std::endl;
     }
     input.close();
