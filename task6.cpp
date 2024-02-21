@@ -9,6 +9,6 @@ int main()
     *p = 20;
     std::cout << "After pointed: " << num << std::endl;
     ref = 30;
-    std::cout << "After refereced: " << num << std::endl;
+    std::cout << "After referenced: " << num << std::endl;
     return 0;
 }
