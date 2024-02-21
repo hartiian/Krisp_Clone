@@ -7,8 +7,8 @@ int main()
     int& ref = num;
     std::cout << "Original number is: " << num << std::endl;
     *p = 20;
-    std::cout << "After pointed: " << num << std::endl;
+    std::cout << "After using pointer: " << num << std::endl;
     ref = 30;
-    std::cout << "After referenced: " << num << std::endl;
+    std::cout << "After using reference: " << num << std::endl;
     return 0;
 }
