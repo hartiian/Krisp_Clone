@@ -30,11 +30,11 @@ SortingStrategy select()
     std::cin >> choice;
     if (choice)
     {
-		return Selection;
+	return Selection;
     }
     else
     {
-		return Bubble;
+	return Bubble;
     }
 }
 
