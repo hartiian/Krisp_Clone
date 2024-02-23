@@ -14,7 +14,7 @@ private:
 public:
     Circle(double r) : radius(r) {}
     virtual double cal() const override 
-	{
+    {
         return 3.14159 * radius * radius;
     }
 };
@@ -28,12 +28,13 @@ private:
 public:
     Rectangle(double l, double w) : length(l), width(w) {}
     virtual double cal() const override 
-	{
+    {
         return length * width; 
     }
 };
 
-int main() {
+int main() 
+{
     Circle circle(14.0);
     Rectangle rectangle(7.0, 6.0);
     std::cout << "Circle: " << circle.cal() << std::endl;
